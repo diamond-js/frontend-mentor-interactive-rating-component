@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+    </style>
+
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <script src="./src/scripts/main.js" defer></script>
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main class="rating-card">
+      <!-- Rating state start -->
+
+      <article class="rating-card__select-rating">
+        <i class="rating-card__star-icon flex-center">
+          <img src="./images/icon-star.svg" alt="" />
+        </i>
+        <h2 class="rating-card__heading">How did we do?</h2>
+        <p class="rating-card__info">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <!-- Add rating here -->
+        <div class="rating-card__rating-btns">
+          <button class="rating-card__rating-button flex-center">1</button>
+          <button class="rating-card__rating-button flex-center">2</button>
+          <button class="rating-card__rating-button flex-center">3</button>
+          <button class="rating-card__rating-button flex-center">4</button>
+          <button class="rating-card__rating-button flex-center">5</button>
+        </div>
+        <button id="rating-card__submit-btn">Submit</button>
+      </article>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+
+      <article class="rating-card__appreciation">
+        <img
+          class="appreciation__illustration"
+          src="./images/illustration-thank-you.svg"
+          alt="Thank You"
+        />
+        <div class="appreciation-selected-rating">
+          You selected <span id="selected-rating-indicator">4</span> out of 5
+        </div>
+
+        <h2 class="appreciation__heading">Thank you!</h2>
+        <p class="appreciation__paragraph">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </article>
+    </main>
+    <!-- Thank you state end -->
+
+    <!-- Attribution start -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Dynasty</a>.
+    </div>
+    <!-- Attribution end -->
+  </body>
+</html>

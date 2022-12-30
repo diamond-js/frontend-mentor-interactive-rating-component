@@ -1,0 +1,12 @@
+@use "_select-rating-section";
+@use "_appreciation";
+
+.rating-card {
+  background-color: var(--clr-dark-blue);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  max-width: 352px;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+}
